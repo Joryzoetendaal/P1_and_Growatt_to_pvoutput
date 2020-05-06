@@ -100,7 +100,7 @@ def post_add_status(): # may raise exceptions
         'v6': VoltageString1
     }
     logging("Posting data to PV Output")
-    #resp = requests.post(url, headers=headers, data=params, timeout=10)
+    resp = requests.post(url, headers=headers, data=params, timeout=10)
     
     TempLog = "ResponceCode of PV Output: " + str(resp.status_code)
     logging(TempLog)
